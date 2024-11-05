@@ -1,8 +1,20 @@
+backend:
+  name: git-gateway
+  branch: master # Change to your branch if necessary
+
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: ${CLOUDINARY_CLOUD_NAME}
+    api_key: ${CLOUDINARY_API_KEY}
+    api_secret: ${CLOUDINARY_API_SECRET}
+
 collections:
   - name: "exhibitions"
     label: "Exhibitions"
-    folder: "src/exhibitions"
+    folder: "data"
     create: true
+    slug: '{{title | slugify}}'
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Location", name: "location", widget: "string"}
@@ -11,4 +23,5 @@ collections:
       - label: "Gallery Images"
         name: "images"
         widget: "list"
-        field: {label: Image, name: image, widget: image}
+        field:
+          {label: "Image", name: "image", widget: "image"}
