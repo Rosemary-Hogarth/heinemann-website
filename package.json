@@ -11,6 +11,10 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "@11ty/eleventy": "^3.0.0"
+    "@11ty/eleventy": "^3.0.0",
+    "sass": "^1.80.6"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3"
   }
 }

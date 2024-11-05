@@ -10,10 +10,14 @@ permalink: "exhibitions/{{ exhibition.title | slug }}/"
 <p>{{ exhibition.location }}</p>
  <p>{{ exhibition.year }}</p>
 
-<div class="carousel">
-{% for image in exhibition.images %}
-  <img src="{{ image }}" alt="Image from {{ exhibition.title }}">
-{% endfor %}
+<div class="carousel-container">
+  <div class="carousel">
+    {% for image in exhibition.images %}
+    <div class="carousel-item">
+      <img src="{{ image }}" class="img-fluid" alt="Image from {{ exhibition.title }}">
+      </div>
+    {% endfor %}
+  </div>
+  <button class="carousel-prev" aria-label="Previous image">&lt;</button>
+  <button class="carousel-next" aria-label="Next image">&gt;</button>
 </div>
-<button class="carousel-prev">Previous</button>
-<button class="carousel-next">Next</button>

@@ -6,7 +6,8 @@
     "coverImage": "/images/img1-cover.jpg",
     "images": [
       "/images/exhibitions/img1.jpg",
-      "/images/exhibitions/img2.jpg"
+      "/images/exhibitions/img2.jpg",
+      "/images/exhibitions/img5.jpg"
     ]
   },
   {
@@ -16,7 +17,18 @@
     "coverImage": "/images/img2-cover.jpg",
     "images": [
       "/images/exhibitions/img3.jpg",
-      "/images/exhibitions/img4.jpg"
+      "/images/exhibitions/img4.jpg",
+      "/images/exhibitions/img6.jpg"
+    ]
+  },
+  {
+    "title": "The Sound of Words Falling",
+    "location": "Jahn und Jahn, Munich",
+    "year": 2024,
+    "coverImage": "/images/img3-cover.jpg",
+    "images": [
+      "/images/exhibitions/img7.jpg",
+      "/images/exhibitions/img8.jpg"
     ]
   }
 
