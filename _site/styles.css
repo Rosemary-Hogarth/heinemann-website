@@ -2,6 +2,14 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+.index-title {
+  font-size: 1.1em;
+  font-weight: 200;
+  margin: 0;
+  padding-left: 1.4em;
+  margin-bottom:1em;
+}
+
 .exhibition-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -18,11 +26,20 @@ body {
 .exhibition-card img {
   width: 100%;
   height: auto;
+  padding: 1em;
+  text-decoration: none;
 }
 
 .exhibition-details {
   padding: 1rem;
+  transition: all 0.3s ease;
 }
+
+.exhibition-details-show {
+  padding: 1.5em;
+  transition: all 0.3s ease;
+}
+
 
 .exhibition-title {
   font-size: 1.05em;
@@ -32,87 +49,60 @@ body {
   color: #2f2e2e;
 }
 
+
 .exhibition-location, .exhibition-year {
   font-size: 0.8rem;
-  color: #666;
+  color: black;
   margin-top: 0;
   margin-bottom: 0;
 }
 
-
-/* Show-Page */
-.carousel-container {
-  position: relative;
-  max-width: 1200px; /* Set a maximum width */
-  width: 100%;
-  margin: 0 auto; /* Center the carousel container */
-  overflow: hidden;
+.exhibition-details:hover  {
+  color: grey;
+}
+.exhibition-card:hover {
+  text-decoration: none;
 }
 
 .carousel {
+  margin: 20px;
+}
+
+.nav-link {
   display: flex;
-  transition: transform 0.3s ease-in-out;
-  width: 100%; /* Ensure full width for the carousel */
+  flex-direction: column;
+  align-items: center;
 }
 
-.carousel-item {
-  min-width: 100%; /* Ensures only one image is visible at a time */
-  box-sizing: border-box; /* Includes padding/border in width calculations */
+.navbar {
+  background-color: white !important;
+  margin-bottom: 30px;
 }
 
-.carousel img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
+.navbar-toggler {
+  border: none !important;
 }
 
-.carousel-prev, .carousel-next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0,0,0,0.5);
-  color: white;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
+.navbar-brand {
+  font-size: 1.6em;
+  margin-left: 0.35em !important;
+}
+/*
+show page */
+.exhib-details-name {
+  font-size: 1em;
+  margin: 0;
 }
 
-.carousel-prev, .carousel-next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: transparent; /* Transparent background */
-  color: black; /* Arrow color */
-  border: none; /* Remove border */
-  font-size: 50px; /* Size of the arrows */
-  font-weight: 100;
-  cursor: pointer;
-  padding: 10px; /* Some padding for better click area */
-  transition: color 0.3s; /* Smooth transition for hover effect */
+.exhib-details-location {
+  font-size: 0.8em;
+  padding: 0;
+  margin: 0;
+  color: #666;
 }
 
-.carousel-prev { left: 10px; }
-.carousel-next { right: 10px; }
-
-.carousel-prev:hover, .carousel-next:hover {
-  color: #5c5858; /* Change color on hover for effect */
-}
-
-
-@media (max-width: 768px) {
-  .carousel-prev, .carousel-next {
-    padding: 10px;
-    font-size: 30px;
-
-  }
-}
-
-@media (min-width: 992px) {
-  .carousel-item {
-    height: 100%; /* Adjust as needed */
-  }
-  .carousel-item img {
-    object-fit: cover;
-    height: 100%;
-  }
+.exhib-details-year {
+  font-size: 0.8em;
+  padding-top: 0;
+  color: #666;
 }
