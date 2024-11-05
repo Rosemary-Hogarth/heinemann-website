@@ -1,0 +1,14 @@
+collections:
+  - name: "exhibitions"
+    label: "Exhibitions"
+    folder: "src/exhibitions"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Location", name: "location", widget: "string"}
+      - {label: "Year", name: "year", widget: "number"}
+      - {label: "Cover Image", name: "coverImage", widget: "image"}
+      - label: "Gallery Images"
+        name: "images"
+        widget: "list"
+        field: {label: Image, name: image, widget: image}

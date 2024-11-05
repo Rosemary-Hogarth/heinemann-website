@@ -1,0 +1,13 @@
+---
+layout: base.njk
+---
+<div class="exhibition-grid">
+{% for exhibition in exhibitions %}
+  <a href="/exhibitions/{{ exhibition.title | slug }}/" class="exhibition-card">
+    <img src="{{ exhibition.coverImage }}" alt="{{ exhibition.title }}">
+    <h2>{{ exhibition.title }}</h2>
+    <p>{{ exhibition.location }}</p>
+    <p> {{ exhibition.year }}</p>
+  </a>
+{% endfor %}
+</div>

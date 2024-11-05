@@ -1,0 +1,23 @@
+[
+  {
+    "title": "O Espelho (Casa da Cerca, Almada)",
+    "location": "",
+    "year": 2024,
+    "coverImage": "/images/img1-cover.jpg",
+    "images": [
+      "/images/exhibitions/img1.jpg",
+      "/images/exhibitions/img2.jpg"
+    ]
+  },
+  {
+    "title": "Essay",
+    "location": "Jahn und Jahn, Munich",
+    "year": 2024,
+    "coverImage": "/images/img2-cover.jpg",
+    "images": [
+      "/images/exhibitions/img3.jpg",
+      "/images/exhibitions/img4.jpg"
+    ]
+  }
+
+]

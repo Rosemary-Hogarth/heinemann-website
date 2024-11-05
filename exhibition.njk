@@ -1,0 +1,19 @@
+---
+layout: base.njk
+pagination:
+  data: exhibitions
+  size: 1
+  alias: exhibition
+permalink: "exhibitions/{{ exhibition.title | slug }}/"
+---
+<h1>{{ exhibition.title }}</h1>
+<p>{{ exhibition.location }}</p>
+ <p>{{ exhibition.year }}</p>
+
+<div class="carousel">
+{% for image in exhibition.images %}
+  <img src="{{ image }}" alt="Image from {{ exhibition.title }}">
+{% endfor %}
+</div>
+<button class="carousel-prev">Previous</button>
+<button class="carousel-next">Next</button>
